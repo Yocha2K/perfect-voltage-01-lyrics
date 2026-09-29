@@ -54,7 +54,7 @@ section { padding:28px 0; }
 .track > span { grid-row:1 / span 2; display:grid; place-items:center; align-self:start; width:34px; height:34px; border-radius:50%; background:var(--accent-soft); color:#278793; font-size:.76rem; font-weight:700; }
 .track strong { padding-bottom:2px; font-size:1rem; line-height:1.5; }
 .track small { padding-bottom:2px; color:var(--muted); font-size:.73rem; line-height:1.55; }
-.mv-link { align-self:center; display:inline-flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; width:34px; height:34px; margin-right:14px; padding:0 0 2px; border-radius:50%; background:var(--accent-soft); color:#278793; text-decoration:none; font-size:.54rem; font-weight:700; line-height:1; white-space:nowrap; transition:background .15s,color .15s; }
+.mv-link { align-self:center; display:inline-flex; align-items:center; justify-content:center; gap:4px; min-width:46px; height:34px; margin-right:14px; padding:0 8px 2px; border-radius:999px; background:var(--accent-soft); color:#278793; text-decoration:none; font-size:.58rem; font-weight:700; line-height:1; white-space:nowrap; transition:background .15s,color .15s; }
 .play-icon { width:0; height:0; border-top:3px solid transparent; border-bottom:3px solid transparent; border-left:5px solid #278793; }
 .mv-link:hover { background:#ccefed; color:#1f6f78; }
 .mv-link:hover .play-icon { border-left-color:#1f6f78; }
@@ -71,6 +71,6 @@ footer { display:flex; justify-content:space-between; gap:12px; padding:24px 0; 
   .track { grid-template-columns:34px minmax(0,1fr); column-gap:8px; padding:11px 10px; }
   .track > span { width:30px; height:30px; font-size:.7rem; }
   .track small { font-size:.68rem; }
-  .mv-link { width:30px; height:30px; margin-right:10px; padding-bottom:2px; font-size:.5rem; }
+  .mv-link { min-width:42px; height:30px; margin-right:10px; padding:0 7px 2px; font-size:.54rem; }
 }
 @media (min-width:600px) { .page { width:min(100% - 64px, 720px); } .hero { padding-top:72px; } .track-list { grid-template-columns:1fr 1fr; } .track-item:first-child { grid-column:1 / -1; } }
