@@ -1,13 +1,13 @@
 const tracks = {
   '01': ['We Rise', 'Yocha2K feat. 宮舞モカ'],
-  '02': ['My Turn!'],
-  '03': ['インキャ★パラダイス'],
-  '04': ['アラームだけセットして'],
-  '05': ['Morning Canvas'],
-  '06': ['白い残像'],
-  '07': ['怠惰プリンセス'],
-  '08': ['COME ON'],
-  '09': ['このまま、私']
+  '02': ['My Turn!', 'Yocha2K feat. 宮舞モカ'],
+  '03': ['インキャ★パラダイス', 'Yocha2K feat. 宮舞モカ'],
+  '04': ['アラームだけセットして', 'Yocha2K feat. 宮舞モカ'],
+  '05': ['Morning Canvas', 'Yocha2K feat. 宮舞モカ'],
+  '06': ['白い残像', 'Yocha2K feat. 宮舞モカ'],
+  '07': ['怠惰プリンセス', 'Yocha2K feat. 宮舞モカ'],
+  '08': ['COME ON', 'Yocha2K feat. 宮舞モカ'],
+  '09': ['このまま、私', 'Yocha2K feat. 宮舞モカ']
 };
 
 const panel = document.querySelector('.lyrics-panel');
