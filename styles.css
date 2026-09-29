@@ -45,18 +45,17 @@ section { padding:28px 0; }
 .section-heading h2,.lyrics-heading h2 { margin:0; font-size:1.05rem; letter-spacing:.08em; }
 .section-heading span { color:var(--muted); font-size:.78rem; }
 .track-list { display:grid; gap:8px; }
-.track-item { display:grid; grid-template-columns:minmax(0,1fr) 72px; gap:8px; }
+.track-item { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:stretch; border:1px solid var(--line); border-radius:14px; background:var(--panel); box-shadow:var(--shadow); transition:border-color .15s,background .15s,transform .15s; backdrop-filter:blur(8px); }
 .track-item > .track:only-child { grid-column:1 / -1; }
-.track { width:100%; display:grid; grid-template-columns:40px 1fr; grid-template-rows:auto auto; column-gap:12px; padding:13px 14px; border:1px solid var(--line); border-radius:14px; background:var(--panel); box-shadow:var(--shadow); color:var(--text); text-align:left; font:inherit; cursor:pointer; transition:border-color .15s,background .15s,transform .15s; backdrop-filter:blur(8px); }
+.track-item:hover { border-color:#79c9cf; background:var(--panel-strong); transform:translateY(-1px); }
+.track { width:100%; display:grid; grid-template-columns:40px 1fr; grid-template-rows:auto auto; column-gap:12px; padding:13px 14px; border:0; border-radius:14px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer; }
 .track:active,.track:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-.track:hover { border-color:#79c9cf; background:var(--panel-strong); transform:translateY(-1px); }
+.track:hover { background:rgba(255,255,255,.35); }
 .track > span { grid-row:1 / span 2; display:grid; place-items:center; align-self:start; width:34px; height:34px; border-radius:50%; background:var(--accent-soft); color:#278793; font-size:.76rem; font-weight:700; }
 .track strong { padding-bottom:2px; font-size:1rem; line-height:1.5; }
 .track small { padding-bottom:2px; color:var(--muted); font-size:.73rem; line-height:1.55; }
-.mv-link { display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid #9fd2d6; border-radius:14px; background:var(--accent-soft); box-shadow:var(--shadow); color:#216e78; text-decoration:none; line-height:1.15; transition:border-color .15s,background .15s,transform .15s; }
-.mv-link small { padding-bottom:1px; font-size:.58rem; line-height:1.45; letter-spacing:.04em; }
-.mv-link strong { margin-top:2px; padding-bottom:2px; font-size:.78rem; line-height:1.45; }
-.mv-link:hover { border-color:#5eb4bc; background:#d3f2f0; transform:translateY(-1px); }
+.mv-link { align-self:center; margin-right:14px; padding:5px 8px 7px; border-radius:999px; background:var(--accent-soft); color:#216e78; text-decoration:none; font-size:.68rem; font-weight:700; line-height:1.35; white-space:nowrap; transition:background .15s,color .15s; }
+.mv-link:hover { background:#ccefed; color:#175b63; }
 .mv-link:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 .lyrics-panel { display:none; padding:20px 16px; border:1px solid var(--line); border-radius:18px; background:var(--panel-strong); box-shadow:var(--shadow); }
 .lyrics-panel.is-open { display:block; }
@@ -66,11 +65,10 @@ section { padding:28px 0; }
 .lyrics-content { margin:8px 0 0; white-space:pre-wrap; overflow-wrap:anywhere; font:inherit; font-size:.98rem; line-height:2; color:#333847; }
 footer { display:flex; justify-content:space-between; gap:12px; padding:24px 0; color:#83909c; font-size:.7rem; border-top:1px solid var(--line); }
 @media (max-width:340px) {
-  .track-item { grid-template-columns:minmax(0,1fr) 62px; gap:6px; }
+  .track-item { grid-template-columns:minmax(0,1fr) auto; }
   .track { grid-template-columns:34px minmax(0,1fr); column-gap:8px; padding:11px 10px; }
   .track > span { width:30px; height:30px; font-size:.7rem; }
   .track small { font-size:.68rem; }
-  .mv-link small { font-size:.54rem; }
-  .mv-link strong { font-size:.74rem; }
+  .mv-link { margin-right:10px; padding:4px 7px 6px; font-size:.64rem; }
 }
 @media (min-width:600px) { .page { width:min(100% - 64px, 720px); } .hero { padding-top:72px; } .track-list { grid-template-columns:1fr 1fr; } .track-item:first-child { grid-column:1 / -1; } }
