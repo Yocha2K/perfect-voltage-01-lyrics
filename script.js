@@ -13,6 +13,7 @@ const tracks = {
 const panel = document.querySelector('.lyrics-panel');
 const number = document.querySelector('#lyrics-number');
 const title = document.querySelector('#lyrics-title');
+const lyricsArtist = document.querySelector('#lyrics-artist');
 const content = document.querySelector('#lyrics-content');
 const close = document.querySelector('#close-lyrics');
 
@@ -20,6 +21,8 @@ async function openLyrics(id) {
   const [name, artist = ''] = tracks[id];
   number.textContent = `${id} / LYRICS`;
   title.textContent = name;
+  lyricsArtist.textContent = artist;
+  lyricsArtist.hidden = !artist;
   content.textContent = '読み込み中…';
   panel.classList.add('is-open');
   close.hidden = false;
@@ -31,7 +34,6 @@ async function openLyrics(id) {
   } catch {
     content.textContent = '歌詞を読み込めませんでした。時間を置いて再度お試しください。';
   }
-  if (artist) number.textContent += ` / ${artist}`;
 }
 
 document.querySelectorAll('.track').forEach((button) => {
