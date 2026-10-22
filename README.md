@@ -1,13 +1,18 @@
-# Perfect Voltage 01（YCK-002）歌詞ページ
+# Perfect Voltage（YCK-002）歌詞・MV
 
-Yocha2K feat. 宮舞モカの9曲アルバム用、携帯閲覧前提の歌詞ページです。
+Yocha2K feat. 宮舞モカの9曲入りアルバム「Perfect Voltage」の歌詞・MV・制作クレジットを掲載しています。
 
-公開予定URL：`https://yocha2k.github.io/perfect-voltage-01-lyrics/`
+[歌詞・MVページ](https://yocha2k.github.io/perfect-voltage-01-lyrics/)
 
-公開前に、スマートフォン実機またはChromeのモバイル表示で以下を確認します。
+- 曲名を選択すると歌詞を表示します。
+- 公開済みの7曲にはYouTubeのMVリンクを掲載しています。
+- CDジャケットを表示し、3000×3000pxのPNGをダウンロードできます。
 
-- 9曲すべてが表示できる
-- 日本語の文字化けがない
-- 曲名タップで歌詞が読める
-- MV公開済みの6曲からYouTubeへ移動できる
-- QRコードを読み取ってページが開く
+## 制作クレジット
+
+- 音楽：[Yocha2K](https://x.com/Yocha2K)
+- ボーカル：宮舞モカ
+- イラスト：[どどつき](https://x.com/dodotsuki)
+- ジャケットデザイン：[SELDO](https://x.com/sl_dndn)
+
+GitHub Pagesの公開URLは、CDジャケット内のQRコードと共通です。
